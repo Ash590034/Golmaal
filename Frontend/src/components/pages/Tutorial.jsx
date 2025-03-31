@@ -78,18 +78,16 @@ const Tutorial = () => {
             <div className="bg-gray-900/90 backdrop-blur-md rounded-2xl p-6 border border-gray-700/50 shadow-xl hover:shadow-[#e8984a]/20 transition-all duration-300">
               <h3 className="text-xl font-semibold text-[#e8984a] mb-3">LOOPS</h3>
               <pre className="bg-gray-800 p-4 rounded-lg text-gray-300 overflow-x-auto">
-                <code>{`maan_le a = 10;
-while (a) {
-  if(a == 5) {
-    a = a-1;
-    print("5 found...");
-    continue;
-  }
-  if(a == 1){
-    break;
-  }
-  print("a");
-  a = a - 1;
+                <code>{`maan_le rows = 0;
+while(rows < 5){
+    maan_le j = 0;
+    maan_le s = "";
+    while(j < rows+1){
+        s = s + "*";
+        j = j+1;
+    }
+    print(s);
+    rows = rows+1;
 }`}</code>
               </pre>
             </div>
